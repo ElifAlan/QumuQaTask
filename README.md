@@ -41,7 +41,7 @@
 
 # Reporting:
 
-Below you will see how to generate reports:
+Below you will see how to generate reports: 
 
    - Go to menu on the right side and find “Maven”
    - Double click “verify” under “Lifecycle”. After running verify, you will see success status.
