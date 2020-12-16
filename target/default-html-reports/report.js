@@ -1,21 +1,16 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/UI_Test.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/API_Test.feature");
 formatter.feature({
-  "name": "Checkout items in the basket",
-  "description": "  Please use home page of https://www.saucedemo.com/",
-  "keyword": "Feature",
-  "tags": [
-    {
-      "name": "@UI"
-    }
-  ]
+  "name": "API test",
+  "description": "",
+  "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "Check item total cost and tax",
+  "name": "Should see LIST USERS of all existing users",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@UI"
+      "name": "@API"
     }
   ]
 });
@@ -23,200 +18,421 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "I am on the home page",
+  "name": "I get the default list of users for on 1st page",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "UI_TestStepDefinitions.i_am_on_the_home_page()"
+  "location": "API_TestStepDefinitions.i_get_the_default_list_of_users_for_on_st_page(Integer)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I login in with the following details",
+  "name": "I get the list of all users within every page",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "API_TestStepDefinitions.i_get_the_list_of_all_users_within_every_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I should see total users count equals the number of user ids",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "API_TestStepDefinitions.i_should_see_total_users_count_equals_the_number_of_user_ids()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Should see SINGLE USER data",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@API"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I make a search for user 3",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "API_TestStepDefinitions.i_make_a_search_for_user(Integer)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I should see the following user data",
   "rows": [
     {
       "cells": [
-        "userName",
+        "first_name",
+        "email"
+      ]
+    },
+    {
+      "cells": [
+        "Emma",
+        "emma.wong@reqres.in"
+      ]
+    }
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "API_TestStepDefinitions.i_should_see_the_following_user_data(DataTable)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Should see SINGLE USER NOT FOUND error code",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@API"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I make a search for user 55",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "API_TestStepDefinitions.i_make_a_search_for_user(Integer)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I receive error code 404 in response",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "API_TestStepDefinitions.i_receive_error_code_in_response(Integer)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenarioOutline({
+  "name": "CREATE a user",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@API"
+    }
+  ]
+});
+formatter.step({
+  "name": "I create a user with following \u003cName\u003e \u003cJob\u003e",
+  "keyword": "Given "
+});
+formatter.step({
+  "name": "response should contain the following data",
+  "keyword": "Then ",
+  "rows": [
+    {
+      "cells": [
+        "name",
+        "job",
+        "id",
+        "createdAt"
+      ]
+    }
+  ]
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "Name",
+        "Job"
+      ]
+    },
+    {
+      "cells": [
+        "Peter",
+        "Manager"
+      ]
+    },
+    {
+      "cells": [
+        "Liza",
+        "Sales"
+      ]
+    }
+  ]
+});
+formatter.scenario({
+  "name": "CREATE a user",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@API"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I create a user with following Peter Manager",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "API_TestStepDefinitions.i_create_a_user_with_following_Peter_Manager()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "response should contain the following data",
+  "rows": [
+    {
+      "cells": [
+        "name",
+        "job",
+        "id",
+        "createdAt"
+      ]
+    }
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "API_TestStepDefinitions.response_should_contain_the_following_data(DataTable)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "CREATE a user",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@API"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I create a user with following Liza Sales",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "API_TestStepDefinitions.i_create_a_user_with_following_Liza_Sales()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "response should contain the following data",
+  "rows": [
+    {
+      "cells": [
+        "name",
+        "job",
+        "id",
+        "createdAt"
+      ]
+    }
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "API_TestStepDefinitions.response_should_contain_the_following_data(DataTable)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "LOGIN - SUCCESSFUL by a user",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@API"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I login successfully with the following data",
+  "rows": [
+    {
+      "cells": [
+        "Email",
         "Password"
       ]
     },
     {
       "cells": [
-        "standard_user",
-        "secret_sauce"
+        "eve.holt@reqres.in",
+        "cityslicka"
       ]
     }
   ],
-  "keyword": "And "
+  "keyword": "Given "
 });
 formatter.match({
-  "location": "UI_TestStepDefinitions.i_login_in_with_the_following_details(DataTable)"
+  "location": "API_TestStepDefinitions.i_login_successfully_with_the_following_data(DataTable)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I add the following items to the basket",
-  "rows": [
-    {
-      "cells": [
-        "Sauce Labs Backpack"
-      ]
-    },
-    {
-      "cells": [
-        "Sauce Labs Fleece Jacket"
-      ]
-    },
-    {
-      "cells": [
-        "Sauce Labs Bolt T-Shirt"
-      ]
-    },
-    {
-      "cells": [
-        "Sauce Labs Onesie"
-      ]
-    }
-  ],
-  "keyword": "And "
-});
-formatter.match({
-  "location": "UI_TestStepDefinitions.i_add_the_following_items_to_the_basket(DataTable)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I  should see 4 items added to the shopping cart",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "UI_TestStepDefinitions.iShouldSeeItemsAddedToTheShoppingCart(int)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on the shopping cart",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "UI_TestStepDefinitions.i_click_on_the_shopping_cart()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I verify that the QTY count for each item should be 1",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "UI_TestStepDefinitions.i_verify_that_the_QTY_count_for_each_item_should_be(Integer)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I remove the following item:",
-  "rows": [
-    {
-      "cells": [
-        "Sauce Labs Fleece Jacket"
-      ]
-    }
-  ],
-  "keyword": "And "
-});
-formatter.match({
-  "location": "UI_TestStepDefinitions.i_remove_the_following_item(DataTable)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I  should see 3 items added to the shopping cart.",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "UI_TestStepDefinitions.i_should_see_items_added_to_the_shopping_cart(Integer)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on the CHECKOUT button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "UI_TestStepDefinitions.i_click_on_the_CHECKOUT_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I type \"FirstName\" for First Name",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "UI_TestStepDefinitions.i_type_for_First_Name(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I type \"LastName\" for Last Name",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "UI_TestStepDefinitions.i_type_for_Last_Name(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I type \"EC1A 9JU\" for ZIP/Postal Code",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "UI_TestStepDefinitions.i_type_for_ZIP_Postal_Code(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on the CONTINUE button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "UI_TestStepDefinitions.i_click_on_the_CONTINUE_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Item total will be equal to the total of items on the list",
+  "name": "I should get a response code of 200",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "UI_TestStepDefinitions.item_total_will_be_equal_to_the_total_of_items_on_the_list()"
+  "location": "API_TestStepDefinitions.i_should_get_a_response_code_of(Integer)"
 });
 formatter.result({
-  "error_message": "org.junit.ComparisonFailure: expected:\u003c$[15].99\u003e but was:\u003c$[49].99\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat AutomationTest.qumu.StepDefinitions.UI_TestStepDefinitions.item_total_will_be_equal_to_the_total_of_items_on_the_list(UI_TestStepDefinitions.java:130)\r\n\tat ✽.Item total will be equal to the total of items on the list(file:src/test/resources/features/UI_Test.feature:29)\r\n",
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "LOGIN - UNSUCCESSFUL by a user987usaASDFGHJKL;\u0027",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@API"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I login unsuccessfully with the following data",
+  "rows": [
+    {
+      "cells": [
+        "Email",
+        "Password"
+      ]
+    },
+    {
+      "cells": [
+        "eve.holt@reqres.in",
+        ""
+      ]
+    }
+  ],
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "API_TestStepDefinitions.i_login_unsuccessfully_with_the_following_data(DataTable)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I should get a response Code of 400",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "API_TestStepDefinitions.i_should_get_a_response_Code_of(Integer)"
+});
+formatter.result({
+  "error_message": "java.lang.AssertionError: expected [200] but found [400]\r\n\tat org.testng.Assert.fail(Assert.java:97)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:136)\r\n\tat org.testng.Assert.assertEquals(Assert.java:118)\r\n\tat org.testng.Assert.assertEquals(Assert.java:839)\r\n\tat org.testng.Assert.assertEquals(Assert.java:849)\r\n\tat AutomationTest.qumu.StepDefinitions.API_TestStepDefinitions.i_should_get_a_response_Code_of(API_TestStepDefinitions.java:195)\r\n\tat ✽.I should get a response Code of 400(file:src/test/resources/features/API_Test.feature:45)\r\n",
   "status": "failed"
 });
 formatter.step({
-  "name": "a Tax rate of 8 % is applied to the total",
+  "name": "I should see the following response message:",
+  "rows": [
+    {
+      "cells": [
+        "\"error\": \"Missing password\""
+      ]
+    }
+  ],
   "keyword": "And "
 });
 formatter.match({
-  "location": "UI_TestStepDefinitions.a_Tax_rate_of_is_applied_to_the_total(Integer)"
+  "location": "API_TestStepDefinitions.i_should_see_the_following_response_message(DataTable)"
 });
 formatter.result({
   "status": "skipped"
 });
 formatter.embedding("image/png", "embedded0.png", null);
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Should see the list of users with DELAYED RESPONSE",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@API"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I wait for the user list to load",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "API_TestStepDefinitions.i_wait_for_the_user_list_to_load()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I should see that every user has a unique id",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "API_TestStepDefinitions.i_should_see_that_every_user_has_a_unique_id()"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.after({
   "status": "passed"
 });

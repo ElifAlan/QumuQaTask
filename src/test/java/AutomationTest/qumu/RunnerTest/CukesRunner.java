@@ -21,11 +21,13 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin = {"json:target/cucumber.json",
                 "html:target/default-html-reports",
+                "json:test-output/cucumber-reports/CucumberTestReport.json",
+                "rerun:test-output/cucumber-reports/rerun.txt",
                 "rerun:target/rerun.txt"},
         features = "src/test/resources/features/",
         glue = "AutomationTest/qumu/StepDefinitions/",
         dryRun = false,
-        tags = "@UI"
+        tags = "@API"
 )
 
 public class CukesRunner {

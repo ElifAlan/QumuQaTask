@@ -19,7 +19,7 @@ Feature: API test
   Scenario: Should see SINGLE USER NOT FOUND error code
     Given I make a search for user 55
     Then I receive error code 404 in response
-
+#]IUYTREWQ
   @API
   Scenario Outline: CREATE a user
     Given I create a user with following <Name> <Job>
@@ -38,7 +38,7 @@ Feature: API test
       | eve.holt@reqres.in | cityslicka |
     Then I should get a response code of 200
   @API
-  Scenario: LOGIN - UNSUCCESSFUL by a user
+  Scenario: LOGIN - UNSUCCESSFUL by a user987usaASDFGHJKL;'
     Given I login unsuccessfully with the following data
       | Email              | Password |
       | eve.holt@reqres.in |          |
