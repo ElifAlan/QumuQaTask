@@ -160,78 +160,39 @@ public class API_TestStepDefinitions {
         assertEquals(response.statusCode(), 201);
         assertEquals(response.contentType(), "application/json; charset=utf-8");
 
-
-    }
-
+ }
 
 
-    @Then("I should get a response code of {int}")
-    public void i_should_get_a_response_code_of(Integer int1) {
-        assertEquals(response.statusCode(), 200);
-        assertEquals(response.contentType(), "application/json; charset=utf-8");
-
-    }
-
-
-
-    @Given("I login successfully with the following data")
-    public void i_login_successfully_with_the_following_data(io.cucumber.datatable.DataTable dataTable) {
-
-        Map<String, Object> login = new HashMap<>();
-        login.put("email", "eve.holt@reqres.in");
-        login.put("password", "cityslicka");
-
-        response = given().accept(ContentType.JSON)
-                .and().contentType(ContentType.JSON)
-                .queryParam("email", "eve.holt@reqres.in")
-                .queryParam("password", "cityslicka")
-                .and().body(login)
-                .when().post(TestDataReader.get("api_url") + "api/login");
-    }
-
-    @Then("I should get a response Code of {int}")
-    public void i_should_get_a_response_Code_of(Integer int1) {
-
-        assertEquals(response.statusCode(), 200);
-    }
-
-    @Given("I login unsuccessfully with the following data")
+    
+    
+     @Given("I login unsuccessfully with the following data")
     public void i_login_unsuccessfully_with_the_following_data(io.cucumber.datatable.DataTable dataTable) {
-        Login login1 = new Login();
-        login1.setEmail("eve.holt@reqres.in");
-        login1.setPassword("");
-        response = given().accept(ContentType.JSON)
+
+
+       Map<String,Object> login= new HashMap<>();
+        login.put("email","eve.holt@reqres.in");
+        login.put("password","cityslicka");
+
+     response= given().accept(ContentType.JSON)
                 .and().contentType(ContentType.JSON)
-                .queryParam("email", "eve.holt@reqres.in")
-                .queryParam("password", "")
-                .and().body(login1)
-                .when().post(TestDataReader.get("api_url") + "api/login");
-        System.out.println(response.statusCode());
+                .queryParam("email","eve.holt@reqres.in")
+                .queryParam("password","cityslicka")
+                .and().body(login)
+                .when().post(TestDataReader.get("api_url")+"api/login");
+
 
     }
 
 
-    @Then("I should get a response code of {int}.")
-    public void iShouldGetAResponseCodeOf(int arg0) {
-
-        assertEquals(response.statusCode(), 400);
-    }
-
-    @Then("I should see the following response message:")
-    public void i_should_see_the_following_response_message(io.cucumber.datatable.DataTable dataTable) {
-
-        assertTrue(response.body().asString().contains("\"error\": \"Missing password\""));
-
-    }
 
     @Given("I wait for the user list to load")
     public void i_wait_for_the_user_list_to_load() {
-        response = given().accept(ContentType.JSON)
-                .and().queryParam("delay", 3)
-                .when().get(TestDataReader.get("api_url") + "api/users");
+        response=given().accept(ContentType.JSON)
+                .and().queryParam("delay",3)
+                .when().get(TestDataReader.get("api_url")+"api/users");
 
-        assertEquals(response.statusCode(), 200);
-        assertEquals(response.contentType(), "application/json; charset=utf-8");
+        assertEquals(response.statusCode(),200);
+        assertEquals(response.contentType(),"application/json; charset=utf-8");
 
     }
 
@@ -240,9 +201,36 @@ public class API_TestStepDefinitions {
         JsonPath json = response.jsonPath();
         List<String> allIds = json.getList("data.id");
         System.out.println(allIds);
-
-
     }
 
 
+    @Then("I should get a response code of {int}.")
+    public void iShouldGetAResponseCodeOf(int int1) {
+               response.then().statusCode(int1);
+
+    }
+
+    @Given("I login unsuccessfully with the following data.")
+    public void i_login_unsuccessfully_with_the_following_data(List<String> ls) {
+        Map<String,String> map=new LinkedHashMap<>();
+        map.put(ls.get(0),ls.get(2));
+        map.put(ls.get(1),ls.get(3));
+        baseURI="https://reqres.in/api";
+        response=given().contentType(ContentType.JSON).accept(ContentType.JSON).body(map).
+                when().post("/login");
+    }
+
+    @Then("I should see the following response message:")
+    public void i_should_see_the_following_response_message(String msg) {
+        response.prettyPrint();
+        Assert.assertFalse(msg.contains(response.body().path("error")));
+    }
+    @Then("I should get a response code of {int}")
+    public void i_should_get_a_response_code_of(Integer int1) {
+        assertEquals(response.statusCode(),200);
+        assertEquals(response.contentType(),"application/json; charset=utf-8");
+
+    }
+
 }
+    
