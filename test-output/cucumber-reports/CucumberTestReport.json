@@ -3,11 +3,11 @@
     "line": 3,
     "elements": [
       {
-        "start_timestamp": "2020-12-16T14:23:34.629Z",
+        "start_timestamp": "2020-12-18T23:41:31.242Z",
         "before": [
           {
             "result": {
-              "duration": 3982460800,
+              "duration": 4065060500,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 632215900,
+              "duration": 713966500,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2204181600,
+              "duration": 4499077200,
               "status": "passed"
             },
             "line": 7,
@@ -53,7 +53,7 @@
           },
           {
             "result": {
-              "duration": 201195800,
+              "duration": 365515700,
               "status": "passed"
             },
             "line": 8,
@@ -65,7 +65,7 @@
           },
           {
             "result": {
-              "duration": 3501700,
+              "duration": 6398100,
               "status": "passed"
             },
             "line": 9,
@@ -83,11 +83,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-16T14:23:41.699Z",
+        "start_timestamp": "2020-12-18T23:41:40.937Z",
         "before": [
           {
             "result": {
-              "duration": 3126750200,
+              "duration": 3244497400,
               "status": "passed"
             },
             "match": {
@@ -102,7 +102,7 @@
         "after": [
           {
             "result": {
-              "duration": 618603200,
+              "duration": 684752600,
               "status": "passed"
             },
             "match": {
@@ -115,7 +115,7 @@
         "steps": [
           {
             "result": {
-              "duration": 55837000,
+              "duration": 89485700,
               "status": "passed"
             },
             "line": 13,
@@ -133,7 +133,7 @@
           },
           {
             "result": {
-              "duration": 73531200,
+              "duration": 184076800,
               "status": "passed"
             },
             "line": 14,
@@ -165,11 +165,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-16T14:23:45.577Z",
+        "start_timestamp": "2020-12-18T23:41:45.147Z",
         "before": [
           {
             "result": {
-              "duration": 3098905600,
+              "duration": 3230719200,
               "status": "passed"
             },
             "match": {
@@ -184,7 +184,7 @@
         "after": [
           {
             "result": {
-              "duration": 644667400,
+              "duration": 666604100,
               "status": "passed"
             },
             "match": {
@@ -197,7 +197,7 @@
         "steps": [
           {
             "result": {
-              "duration": 44772500,
+              "duration": 78644700,
               "status": "passed"
             },
             "line": 20,
@@ -215,7 +215,7 @@
           },
           {
             "result": {
-              "duration": 401500,
+              "duration": 1275900,
               "status": "passed"
             },
             "line": 21,
@@ -239,11 +239,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-16T14:23:49.369Z",
+        "start_timestamp": "2020-12-18T23:41:49.134Z",
         "before": [
           {
             "result": {
-              "duration": 3101875400,
+              "duration": 3221097700,
               "status": "passed"
             },
             "match": {
@@ -258,7 +258,7 @@
         "after": [
           {
             "result": {
-              "duration": 630919700,
+              "duration": 693711300,
               "status": "passed"
             },
             "match": {
@@ -271,7 +271,7 @@
         "steps": [
           {
             "result": {
-              "duration": 341454800,
+              "duration": 544410300,
               "status": "passed"
             },
             "line": 25,
@@ -283,7 +283,7 @@
           },
           {
             "result": {
-              "duration": 328712400,
+              "duration": 139938800,
               "status": "passed"
             },
             "line": 26,
@@ -311,11 +311,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-16T14:23:53.778Z",
+        "start_timestamp": "2020-12-18T23:41:53.753Z",
         "before": [
           {
             "result": {
-              "duration": 3104226800,
+              "duration": 3258889100,
               "status": "passed"
             },
             "match": {
@@ -330,7 +330,7 @@
         "after": [
           {
             "result": {
-              "duration": 612649400,
+              "duration": 658510600,
               "status": "passed"
             },
             "match": {
@@ -343,7 +343,7 @@
         "steps": [
           {
             "result": {
-              "duration": 92233700,
+              "duration": 117077500,
               "status": "passed"
             },
             "line": 25,
@@ -355,7 +355,7 @@
           },
           {
             "result": {
-              "duration": 73361300,
+              "duration": 89707100,
               "status": "passed"
             },
             "line": 26,
@@ -383,11 +383,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-16T14:23:57.663Z",
+        "start_timestamp": "2020-12-18T23:41:57.925Z",
         "before": [
           {
             "result": {
-              "duration": 3084599500,
+              "duration": 3225408700,
               "status": "passed"
             },
             "match": {
@@ -402,7 +402,7 @@
         "after": [
           {
             "result": {
-              "duration": 621831100,
+              "duration": 677579300,
               "status": "passed"
             },
             "match": {
@@ -415,14 +415,11 @@
         "steps": [
           {
             "result": {
-              "duration": 86886600,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 36,
             "name": "I login successfully with the following data",
-            "match": {
-              "location": "API_TestStepDefinitions.i_login_successfully_with_the_following_data(DataTable)"
-            },
+            "match": {},
             "rows": [
               {
                 "cells": [
@@ -441,8 +438,8 @@
           },
           {
             "result": {
-              "duration": 368900,
-              "status": "passed"
+              "duration": 911900,
+              "status": "skipped"
             },
             "line": 39,
             "name": "I should get a response code of 200",
@@ -465,11 +462,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-16T14:24:01.460Z",
+        "start_timestamp": "2020-12-18T23:42:01.860Z",
         "before": [
           {
             "result": {
-              "duration": 3110140700,
+              "duration": 3266440300,
               "status": "passed"
             },
             "match": {
@@ -483,14 +480,8 @@
         "id": "api-test;login---unsuccessful-by-a-user987usaasdfghjkl;-",
         "after": [
           {
-            "embeddings": [
-              {
-                "data": "iVBORw0KGgoAAAANSUhEUgAABAoAAAJACAYAAAAEt4QcAAAAAXNSR0IArs4c6QAADVhJREFUeJzt2DEBwDAMwLCs/Dlnnym0h4TAt7/d3QEAAACYmXM7AAAAAHiHUQAAAADEKAAAAABiFAAAAAAxCgAAAIAYBQAAAECMAgAAACBGAQAAABCjAAAAAIhRAAAAAMQoAAAAAGIUAAAAADEKAAAAgBgFAAAAQIwCAAAAIEYBAAAAEKMAAAAAiFEAAAAAxCgAAAAAYhQAAAAAMQoAAACAGAUAAABAjAIAAAAgRgEAAAAQowAAAACIUQAAAADEKAAAAABiFAAAAAAxCgAAAIAYBQAAAECMAgAAACBGAQAAABCjAAAAAIhRAAAAAMQoAAAAAGIUAAAAADEKAAAAgBgFAAAAQIwCAAAAIEYBAAAAEKMAAAAAiFEAAAAAxCgAAAAAYhQAAAAAMQoAAACAGAUAAABAjAIAAAAgRgEAAAAQowAAAACIUQAAAADEKAAAAABiFAAAAAAxCgAAAIAYBQAAAECMAgAAACBGAQAAABCjAAAAAIhRAAAAAMQoAAAAAGIUAAAAADEKAAAAgBgFAAAAQIwCAAAAIEYBAAAAEKMAAAAAiFEAAAAAxCgAAAAAYhQAAAAAMQoAAACAGAUAAABAjAIAAAAgRgEAAAAQowAAAACIUQAAAADEKAAAAABiFAAAAAAxCgAAAIAYBQAAAECMAgAAACBGAQAAABCjAAAAAIhRAAAAAMQoAAAAAGIUAAAAADEKAAAAgBgFAAAAQIwCAAAAIEYBAAAAEKMAAAAAiFEAAAAAxCgAAAAAYhQAAAAAMQoAAACAGAUAAABAjAIAAAAgRgEAAAAQowAAAACIUQAAAADEKAAAAABiFAAAAAAxCgAAAIAYBQAAAECMAgAAACBGAQAAABCjAAAAAIhRAAAAAMQoAAAAAGIUAAAAADEKAAAAgBgFAAAAQIwCAAAAIEYBAAAAEKMAAAAAiFEAAAAAxCgAAAAAYhQAAAAAMQoAAACAGAUAAABAjAIAAAAgRgEAAAAQowAAAACIUQAAAADEKAAAAABiFAAAAAAxCgAAAIAYBQAAAECMAgAAACBGAQAAABCjAAAAAIhRAAAAAMQoAAAAAGIUAAAAADEKAAAAgBgFAAAAQIwCAAAAIEYBAAAAEKMAAAAAiFEAAAAAxCgAAAAAYhQAAAAAMQoAAACAGAUAAABAjAIAAAAgRgEAAAAQowAAAACIUQAAAADEKAAAAABiFAAAAAAxCgAAAIAYBQAAAECMAgAAACBGAQAAABCjAAAAAIhRAAAAAMQoAAAAAGIUAAAAADEKAAAAgBgFAAAAQIwCAAAAIEYBAAAAEKMAAAAAiFEAAAAAxCgAAAAAYhQAAAAAMQoAAACAGAUAAABAjAIAAAAgRgEAAAAQowAAAACIUQAAAADEKAAAAABiFAAAAAAxCgAAAIAYBQAAAECMAgAAACBGAQAAABCjAAAAAIhRAAAAAMQoAAAAAGIUAAAAADEKAAAAgBgFAAAAQIwCAAAAIEYBAAAAEKMAAAAAiFEAAAAAxCgAAAAAYhQAAAAAMQoAAACAGAUAAABAjAIAAAAgRgEAAAAQowAAAACIUQAAAADEKAAAAABiFAAAAAAxCgAAAIAYBQAAAECMAgAAACBGAQAAABCjAAAAAIhRAAAAAMQoAAAAAGIUAAAAADEKAAAAgBgFAAAAQIwCAAAAIEYBAAAAEKMAAAAAiFEAAAAAxCgAAAAAYhQAAAAAMQoAAACAGAUAAABAjAIAAAAgRgEAAAAQowAAAACIUQAAAADEKAAAAABiFAAAAAAxCgAAAIAYBQAAAECMAgAAACBGAQAAABCjAAAAAIhRAAAAAMQoAAAAAGIUAAAAADEKAAAAgBgFAAAAQIwCAAAAIEYBAAAAEKMAAAAAiFEAAAAAxCgAAAAAYhQAAAAAMQoAAACAGAUAAABAjAIAAAAgRgEAAAAQowAAAACIUQAAAADEKAAAAABiFAAAAAAxCgAAAIAYBQAAAECMAgAAACBGAQAAABCjAAAAAIhRAAAAAMQoAAAAAGIUAAAAADEKAAAAgBgFAAAAQIwCAAAAIEYBAAAAEKMAAAAAiFEAAAAAxCgAAAAAYhQAAAAAMQoAAACAGAUAAABAjAIAAAAgRgEAAAAQowAAAACIUQAAAADEKAAAAABiFAAAAAAxCgAAAIAYBQAAAECMAgAAACBGAQAAABCjAAAAAIhRAAAAAMQoAAAAAGIUAAAAADEKAAAAgBgFAAAAQIwCAAAAIEYBAAAAEKMAAAAAiFEAAAAAxCgAAAAAYhQAAAAAMQoAAACAGAUAAABAjAIAAAAgRgEAAAAQowAAAACIUQAAAADEKAAAAABiFAAAAAAxCgAAAIAYBQAAAECMAgAAACBGAQAAABCjAAAAAIhRAAAAAMQoAAAAAGIUAAAAADEKAAAAgBgFAAAAQIwCAAAAIEYBAAAAEKMAAAAAiFEAAAAAxCgAAAAAYhQAAAAAMQoAAACAGAUAAABAjAIAAAAgRgEAAAAQowAAAACIUQAAAADEKAAAAABiFAAAAAAxCgAAAIAYBQAAAECMAgAAACBGAQAAABCjAAAAAIhRAAAAAMQoAAAAAGIUAAAAADEKAAAAgBgFAAAAQIwCAAAAIEYBAAAAEKMAAAAAiFEAAAAAxCgAAAAAYhQAAAAAMQoAAACAGAUAAABAjAIAAAAgRgEAAAAQowAAAACIUQAAAADEKAAAAABiFAAAAAAxCgAAAIAYBQAAAECMAgAAACBGAQAAABCjAAAAAIhRAAAAAMQoAAAAAGIUAAAAADEKAAAAgBgFAAAAQIwCAAAAIEYBAAAAEKMAAAAAiFEAAAAAxCgAAAAAYhQAAAAAMQoAAACAGAUAAABAjAIAAAAgRgEAAAAQowAAAACIUQAAAADEKAAAAABiFAAAAAAxCgAAAIAYBQAAAECMAgAAACBGAQAAABCjAAAAAIhRAAAAAMQoAAAAAGIUAAAAADEKAAAAgBgFAAAAQIwCAAAAIEYBAAAAEKMAAAAAiFEAAAAAxCgAAAAAYhQAAAAAMQoAAACAGAUAAABAjAIAAAAgRgEAAAAQowAAAACIUQAAAADEKAAAAABiFAAAAAAxCgAAAIAYBQAAAECMAgAAACBGAQAAABCjAAAAAIhRAAAAAMQoAAAAAGIUAAAAADEKAAAAgBgFAAAAQIwCAAAAIEYBAAAAEKMAAAAAiFEAAAAAxCgAAAAAYhQAAAAAMQoAAACAGAUAAABAjAIAAAAgRgEAAAAQowAAAACIUQAAAADEKAAAAABiFAAAAAAxCgAAAIAYBQAAAECMAgAAACBGAQAAABCjAAAAAIhRAAAAAMQoAAAAAGIUAAAAADEKAAAAgBgFAAAAQIwCAAAAIEYBAAAAEKMAAAAAiFEAAAAAxCgAAAAAYhQAAAAAMQoAAACAGAUAAABAjAIAAAAgRgEAAAAQowAAAACIUQAAAADEKAAAAABiFAAAAAAxCgAAAIAYBQAAAECMAgAAACBGAQAAABCjAAAAAIhRAAAAAMQoAAAAAGIUAAAAADEKAAAAgBgFAAAAQIwCAAAAIEYBAAAAEKMAAAAAiFEAAAAAxCgAAAAAYhQAAAAAMQoAAACAGAUAAABAjAIAAAAgRgEAAAAQowAAAACIUQAAAADEKAAAAABiFAAAAAAxCgAAAIAYBQAAAECMAgAAACBGAQAAABCjAAAAAIhRAAAAAMQoAAAAAGIUAAAAADEKAAAAgBgFAAAAQIwCAAAAIEYBAAAAEKMAAAAAiFEAAAAAxCgAAAAAYhQAAAAAMQoAAACAGAUAAABAjAIAAAAgRgEAAAAQowAAAACIUQAAAADEKAAAAABiFAAAAAAxCgAAAIAYBQAAAECMAgAAACBGAQAAABCjAAAAAIhRAAAAAMQoAAAAAGIUAAAAADEKAAAAgBgFAAAAQIwCAAAAIEYBAAAAEKMAAAAAiFEAAAAAxCgAAAAAYhQAAAAAMQoAAACAGAUAAABAjAIAAAAgRgEAAAAQowAAAACIUQAAAADEKAAAAABiFAAAAAAxCgAAAIAYBQAAAECMAgAAACBGAQAAABCjAAAAAIhRAAAAAMQoAAAAAGIUAAAAADEKAAAAgBgFAAAAQIwCAAAAIEYBAAAAEKMAAAAAiFEAAAAAxCgAAAAAYhQAAAAAMQoAAACAGAUAAABAjAIAAAAgRgEAAAAQowAAAACIUQAAAADEKAAAAABiFAAAAAAxCgAAAIAYBQAAAECMAgAAACBGAQAAABCjAAAAAIhRAAAAAMQoAAAAAGIUAAAAADEKAAAAgBgFAAAAQIwCAAAAIEYBAAAAEKMAAAAAiFEAAAAAxCgAAAAAYhQAAAAAMQoAAACAGAUAAABAjAIAAAAgRgEAAAAQowAAAACIUQAAAADEKAAAAABiFAAAAAAxCgAAAIAYBQAAAECMAgAAACBGAQAAABCjAAAAAIhRAAAAAMQoAAAAAGIUAAAAADEKAAAAgBgFAAAAQIwCAAAAIEYBAAAAEKMAAAAAiFEAAAAAxCgAAAAAYhQAAAAAMQoAAACAGAUAAABAjAIAAAAgP7xqCHxX5to9AAAAAElFTkSuQmCC",
-                "mime_type": "image/png"
-              }
-            ],
             "result": {
-              "duration": 946404800,
+              "duration": 682756700,
               "status": "passed"
             },
             "match": {
@@ -503,7 +494,7 @@
         "steps": [
           {
             "result": {
-              "duration": 103734300,
+              "duration": 115178900,
               "status": "passed"
             },
             "line": 42,
@@ -529,32 +520,22 @@
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: expected [200] but found [400]\r\n\tat org.testng.Assert.fail(Assert.java:97)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:136)\r\n\tat org.testng.Assert.assertEquals(Assert.java:118)\r\n\tat org.testng.Assert.assertEquals(Assert.java:839)\r\n\tat org.testng.Assert.assertEquals(Assert.java:849)\r\n\tat AutomationTest.qumu.StepDefinitions.API_TestStepDefinitions.i_should_get_a_response_Code_of(API_TestStepDefinitions.java:195)\r\n\tat ✽.I should get a response Code of 400(file:src/test/resources/features/API_Test.feature:45)\r\n",
-              "duration": 2376300,
-              "status": "failed"
+              "status": "undefined"
             },
             "line": 45,
             "name": "I should get a response Code of 400",
-            "match": {
-              "arguments": [
-                {
-                  "val": "400",
-                  "offset": 32
-                }
-              ],
-              "location": "API_TestStepDefinitions.i_should_get_a_response_Code_of(Integer)"
-            },
+            "match": {},
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 742100,
+              "duration": 2257100,
               "status": "skipped"
             },
             "line": 46,
             "name": "I should see the following response message:",
             "match": {
-              "location": "API_TestStepDefinitions.i_should_see_the_following_response_message(DataTable)"
+              "location": "API_TestStepDefinitions.i_should_see_the_following_response_message(String)"
             },
             "rows": [
               {
@@ -573,11 +554,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-16T14:24:05.631Z",
+        "start_timestamp": "2020-12-18T23:42:05.938Z",
         "before": [
           {
             "result": {
-              "duration": 3105063600,
+              "duration": 3282285600,
               "status": "passed"
             },
             "match": {
@@ -585,14 +566,14 @@
             }
           }
         ],
-        "line": 49,
+        "line": 50,
         "name": "Should see the list of users with DELAYED RESPONSE",
         "description": "",
         "id": "api-test;should-see-the-list-of-users-with-delayed-response",
         "after": [
           {
             "result": {
-              "duration": 670935900,
+              "duration": 664761400,
               "status": "passed"
             },
             "match": {
@@ -605,10 +586,10 @@
         "steps": [
           {
             "result": {
-              "duration": 3088462300,
+              "duration": 3391980100,
               "status": "passed"
             },
-            "line": 50,
+            "line": 51,
             "name": "I wait for the user list to load",
             "match": {
               "location": "API_TestStepDefinitions.i_wait_for_the_user_list_to_load()"
@@ -617,10 +598,10 @@
           },
           {
             "result": {
-              "duration": 10681800,
+              "duration": 30115700,
               "status": "passed"
             },
-            "line": 51,
+            "line": 52,
             "name": "I should see that every user has a unique id",
             "match": {
               "location": "API_TestStepDefinitions.i_should_see_that_every_user_has_a_unique_id()"
@@ -640,6 +621,15 @@
     "id": "api-test",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/API_Test.feature",
-    "tags": []
+    "tags": [
+      {
+        "name": "@API",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
   }
 ]

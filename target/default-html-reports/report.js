@@ -2,7 +2,12 @@ $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.
 formatter.feature({
   "name": "API test",
   "description": "",
-  "keyword": "Feature"
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@API"
+    }
+  ]
 });
 formatter.scenario({
   "name": "Should see LIST USERS of all existing users",
@@ -139,12 +144,7 @@ formatter.after({
 formatter.scenarioOutline({
   "name": "CREATE a user",
   "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@API"
-    }
-  ]
+  "keyword": "Scenario Outline"
 });
 formatter.step({
   "name": "I create a user with following \u003cName\u003e \u003cJob\u003e",
@@ -312,11 +312,9 @@ formatter.step({
   ],
   "keyword": "Given "
 });
-formatter.match({
-  "location": "API_TestStepDefinitions.i_login_successfully_with_the_following_data(DataTable)"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
   "name": "I should get a response code of 200",
@@ -326,7 +324,7 @@ formatter.match({
   "location": "API_TestStepDefinitions.i_should_get_a_response_code_of(Integer)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.after({
   "status": "passed"
@@ -372,12 +370,9 @@ formatter.step({
   "name": "I should get a response Code of 400",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "API_TestStepDefinitions.i_should_get_a_response_Code_of(Integer)"
-});
+formatter.match({});
 formatter.result({
-  "error_message": "java.lang.AssertionError: expected [200] but found [400]\r\n\tat org.testng.Assert.fail(Assert.java:97)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:136)\r\n\tat org.testng.Assert.assertEquals(Assert.java:118)\r\n\tat org.testng.Assert.assertEquals(Assert.java:839)\r\n\tat org.testng.Assert.assertEquals(Assert.java:849)\r\n\tat AutomationTest.qumu.StepDefinitions.API_TestStepDefinitions.i_should_get_a_response_Code_of(API_TestStepDefinitions.java:195)\r\n\tat ✽.I should get a response Code of 400(file:src/test/resources/features/API_Test.feature:45)\r\n",
-  "status": "failed"
+  "status": "undefined"
 });
 formatter.step({
   "name": "I should see the following response message:",
@@ -391,12 +386,11 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "API_TestStepDefinitions.i_should_see_the_following_response_message(DataTable)"
+  "location": "API_TestStepDefinitions.i_should_see_the_following_response_message(String)"
 });
 formatter.result({
   "status": "skipped"
 });
-formatter.embedding("image/png", "embedded0.png", null);
 formatter.after({
   "status": "passed"
 });
