@@ -33,20 +33,23 @@ Feature: API test
 
 
   Scenario: LOGIN - SUCCESSFUL by a user
-    Given I login successfully with the following data
+    Given I login unsuccessfully with the following data
       | Email              | Password   |
       | eve.holt@reqres.in | cityslicka |
     Then I should get a response code of 200
 
-  Scenario: LOGIN - UNSUCCESSFUL by a user987usaASDFGHJKL;'
-    Given I login unsuccessfully with the following data
+  Scenario: LOGIN - UNSUCCESSFUL by a user
+    Given I login unsuccessfully with the following data.
       | Email              | Password |
       | eve.holt@reqres.in |          |
-    Then I should get a response Code of 400
+    Then I should get a response code of 400.
     And I should see the following response message:
       | "error": "Missing password" |
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1d0c7ab2a80a5ae3f7a728ffe509d1d53c9440ee
   Scenario: Should see the list of users with DELAYED RESPONSE
     Given I wait for the user list to load
     Then I should see that every user has a unique id

@@ -6,8 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="QumuA_2" />
         <module name="QumuQaTask" />
-        <module name="QumuA" />
       </profile>
     </annotationProcessing>
   </component>
