@@ -46,10 +46,10 @@ Feature: API test
     And I should see the following response message:
       | "error": "Missing password" |
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 1d0c7ab2a80a5ae3f7a728ffe509d1d53c9440ee
+
+
+
   Scenario: Should see the list of users with DELAYED RESPONSE
     Given I wait for the user list to load
     Then I should see that every user has a unique id

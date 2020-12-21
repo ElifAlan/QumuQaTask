@@ -1,632 +1,300 @@
 [
   {
-    "line": 3,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-12-18T23:41:31.242Z",
-        "before": [
-          {
-            "result": {
-              "duration": 4065060500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 6,
-        "name": "Should see LIST USERS of all existing users",
+        "start_timestamp": "2020-12-21T13:10:24.280Z",
+        "line": 5,
+        "name": "Check item total cost and tax",
         "description": "",
-        "id": "api-test;should-see-list-users-of-all-existing-users",
-        "after": [
-          {
-            "result": {
-              "duration": 713966500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDown(Scenario)"
-            }
-          }
-        ],
+        "id": "checkout-items-in-the-basket;check-item-total-cost-and-tax",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 4499077200,
+              "duration": 4466331000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "I get the default list of users for on 1st page",
+            "line": 6,
+            "name": "I am on the home page",
             "match": {
-              "arguments": [
-                {
-                  "val": "1",
-                  "offset": 39
-                }
-              ],
-              "location": "API_TestStepDefinitions.i_get_the_default_list_of_users_for_on_st_page(Integer)"
+              "location": "UI_TestStepDefinitions.i_am_on_the_home_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 365515700,
+              "duration": 1217318100,
               "status": "passed"
             },
-            "line": 8,
-            "name": "I get the list of all users within every page",
+            "line": 7,
+            "name": "I login in with the following details",
             "match": {
-              "location": "API_TestStepDefinitions.i_get_the_list_of_all_users_within_every_page()"
+              "location": "UI_TestStepDefinitions.i_login_in_with_the_following_details(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "userName",
+                  "Password"
+                ]
+              },
+              {
+                "cells": [
+                  "standard_user",
+                  "secret_sauce"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 235086300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I add the following items to the basket",
+            "match": {
+              "location": "UI_TestStepDefinitions.i_add_the_following_items_to_the_basket(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Sauce Labs Backpack"
+                ]
+              },
+              {
+                "cells": [
+                  "Sauce Labs Fleece Jacket"
+                ]
+              },
+              {
+                "cells": [
+                  "Sauce Labs Bolt T-Shirt"
+                ]
+              },
+              {
+                "cells": [
+                  "Sauce Labs Onesie"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 41519800,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I  should see 4 items added to the shopping cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 14
+                }
+              ],
+              "location": "UI_TestStepDefinitions.i_should_see_items_added_to_the_shopping_cart(Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 124391700,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I click on the shopping cart",
+            "match": {
+              "location": "UI_TestStepDefinitions.i_click_on_the_shopping_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 144890900,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I verify that the QTY count for each item should be 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 52
+                }
+              ],
+              "location": "UI_TestStepDefinitions.i_verify_that_the_QTY_count_for_each_item_should_be(Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3083729800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I remove the following item:",
+            "match": {
+              "location": "UI_TestStepDefinitions.i_remove_the_following_item(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Sauce Labs Fleece Jacket"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20023101,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I  should see 3 items added to the shopping cart.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 14
+                }
+              ],
+              "location": "UI_TestStepDefinitions.iShouldSeeItemsAddedToTheShoppingCart(Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 104333000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I click on the CHECKOUT button",
+            "match": {
+              "location": "UI_TestStepDefinitions.i_click_on_the_CHECKOUT_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 87343400,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I type \"FirstName\" for First Name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"FirstName\"",
+                  "offset": 7
+                }
+              ],
+              "location": "UI_TestStepDefinitions.i_type_for_First_Name(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63581500,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I type \"LastName\" for Last Name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"LastName\"",
+                  "offset": 7
+                }
+              ],
+              "location": "UI_TestStepDefinitions.i_type_for_Last_Name(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 65913799,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I type \"EC1A 9JU\" for ZIP/Postal Code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"EC1A 9JU\"",
+                  "offset": 7
+                }
+              ],
+              "location": "UI_TestStepDefinitions.i_type_for_ZIP_Postal_Code(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 201396300,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I click on the CONTINUE button",
+            "match": {
+              "location": "UI_TestStepDefinitions.i_click_on_the_CONTINUE_button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 6398100,
+              "duration": 228346299,
               "status": "passed"
             },
-            "line": 9,
-            "name": "I should see total users count equals the number of user ids",
+            "line": 29,
+            "name": "Item total will be equal to the total of items on the list",
             "match": {
-              "location": "API_TestStepDefinitions.i_should_see_total_users_count_equals_the_number_of_user_ids()"
+              "location": "UI_TestStepDefinitions.item_total_will_be_equal_to_the_total_of_items_on_the_list()"
             },
             "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@API"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-12-18T23:41:40.937Z",
-        "before": [
+          },
           {
             "result": {
-              "duration": 3244497400,
+              "duration": 128458000,
               "status": "passed"
             },
-            "match": {
-              "location": "Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 12,
-        "name": "Should see SINGLE USER data",
-        "description": "",
-        "id": "api-test;should-see-single-user-data",
-        "after": [
-          {
-            "result": {
-              "duration": 684752600,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 89485700,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "I make a search for user 3",
+            "line": 30,
+            "name": "a Tax rate of 8 % is applied to the total",
             "match": {
               "arguments": [
                 {
-                  "val": "3",
-                  "offset": 25
+                  "val": "8",
+                  "offset": 14
                 }
               ],
-              "location": "API_TestStepDefinitions.i_make_a_search_for_user(Integer)"
+              "location": "UI_TestStepDefinitions.a_Tax_rate_of_is_applied_to_the_total(Integer)"
             },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 184076800,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "I should see the following user data",
-            "match": {
-              "location": "API_TestStepDefinitions.i_should_see_the_following_user_data(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "first_name",
-                  "email"
-                ]
-              },
-              {
-                "cells": [
-                  "Emma",
-                  "emma.wong@reqres.in"
-                ]
-              }
-            ],
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@API"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-12-18T23:41:45.147Z",
-        "before": [
-          {
-            "result": {
-              "duration": 3230719200,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 19,
-        "name": "Should see SINGLE USER NOT FOUND error code",
-        "description": "",
-        "id": "api-test;should-see-single-user-not-found-error-code",
-        "after": [
-          {
-            "result": {
-              "duration": 666604100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 78644700,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "I make a search for user 55",
-            "match": {
-              "arguments": [
-                {
-                  "val": "55",
-                  "offset": 25
-                }
-              ],
-              "location": "API_TestStepDefinitions.i_make_a_search_for_user(Integer)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1275900,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "I receive error code 404 in response",
-            "match": {
-              "arguments": [
-                {
-                  "val": "404",
-                  "offset": 21
-                }
-              ],
-              "location": "API_TestStepDefinitions.i_receive_error_code_in_response(Integer)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@API"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-12-18T23:41:49.134Z",
-        "before": [
-          {
-            "result": {
-              "duration": 3221097700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 31,
-        "name": "CREATE a user",
-        "description": "",
-        "id": "api-test;create-a-user;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 693711300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 544410300,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "I create a user with following Peter Manager",
-            "match": {
-              "location": "API_TestStepDefinitions.i_create_a_user_with_following_Peter_Manager()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 139938800,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "response should contain the following data",
-            "match": {
-              "location": "API_TestStepDefinitions.response_should_contain_the_following_data(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "name",
-                  "job",
-                  "id",
-                  "createdAt"
-                ]
-              }
-            ],
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@API"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-12-18T23:41:53.753Z",
-        "before": [
-          {
-            "result": {
-              "duration": 3258889100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 32,
-        "name": "CREATE a user",
-        "description": "",
-        "id": "api-test;create-a-user;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 658510600,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 117077500,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "I create a user with following Liza Sales",
-            "match": {
-              "location": "API_TestStepDefinitions.i_create_a_user_with_following_Liza_Sales()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 89707100,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "response should contain the following data",
-            "match": {
-              "location": "API_TestStepDefinitions.response_should_contain_the_following_data(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "name",
-                  "job",
-                  "id",
-                  "createdAt"
-                ]
-              }
-            ],
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@API"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-12-18T23:41:57.925Z",
-        "before": [
-          {
-            "result": {
-              "duration": 3225408700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 35,
-        "name": "LOGIN - SUCCESSFUL by a user",
-        "description": "",
-        "id": "api-test;login---successful-by-a-user",
-        "after": [
-          {
-            "result": {
-              "duration": 677579300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 36,
-            "name": "I login successfully with the following data",
-            "match": {},
-            "rows": [
-              {
-                "cells": [
-                  "Email",
-                  "Password"
-                ]
-              },
-              {
-                "cells": [
-                  "eve.holt@reqres.in",
-                  "cityslicka"
-                ]
-              }
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 911900,
-              "status": "skipped"
-            },
-            "line": 39,
-            "name": "I should get a response code of 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 32
-                }
-              ],
-              "location": "API_TestStepDefinitions.i_should_get_a_response_code_of(Integer)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@API"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-12-18T23:42:01.860Z",
-        "before": [
-          {
-            "result": {
-              "duration": 3266440300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 41,
-        "name": "LOGIN - UNSUCCESSFUL by a user987usaASDFGHJKL;\u0027",
-        "description": "",
-        "id": "api-test;login---unsuccessful-by-a-user987usaasdfghjkl;-",
-        "after": [
-          {
-            "result": {
-              "duration": 682756700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 115178900,
-              "status": "passed"
-            },
-            "line": 42,
-            "name": "I login unsuccessfully with the following data",
-            "match": {
-              "location": "API_TestStepDefinitions.i_login_unsuccessfully_with_the_following_data(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "Email",
-                  "Password"
-                ]
-              },
-              {
-                "cells": [
-                  "eve.holt@reqres.in",
-                  ""
-                ]
-              }
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 45,
-            "name": "I should get a response Code of 400",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2257100,
-              "status": "skipped"
-            },
-            "line": 46,
-            "name": "I should see the following response message:",
-            "match": {
-              "location": "API_TestStepDefinitions.i_should_see_the_following_response_message(String)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "\"error\": \"Missing password\""
-                ]
-              }
-            ],
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@API"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-12-18T23:42:05.938Z",
-        "before": [
-          {
-            "result": {
-              "duration": 3282285600,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 50,
-        "name": "Should see the list of users with DELAYED RESPONSE",
-        "description": "",
-        "id": "api-test;should-see-the-list-of-users-with-delayed-response",
-        "after": [
-          {
-            "result": {
-              "duration": 664761400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 3391980100,
-              "status": "passed"
-            },
-            "line": 51,
-            "name": "I wait for the user list to load",
-            "match": {
-              "location": "API_TestStepDefinitions.i_wait_for_the_user_list_to_load()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 30115700,
-              "status": "passed"
-            },
-            "line": 52,
-            "name": "I should see that every user has a unique id",
-            "match": {
-              "location": "API_TestStepDefinitions.i_should_see_that_every_user_has_a_unique_id()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@API"
+            "name": "@UI"
           }
         ]
       }
     ],
-    "name": "API test",
-    "description": "",
-    "id": "api-test",
+    "name": "Checkout items in the basket",
+    "description": "  Please use home page of https://www.saucedemo.com/",
+    "id": "checkout-items-in-the-basket",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/API_Test.feature",
+    "uri": "file:src/test/resources/features/UI_Test.feature",
     "tags": [
       {
-        "name": "@API",
+        "name": "@UI",
         "type": "Tag",
         "location": {
-          "line": 2,
+          "line": 1,
           "column": 1
         }
       }

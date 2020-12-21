@@ -1,15 +1,13 @@
 package AutomationTest.qumu.StepDefinitions;
 
+
 import AutomationTest.qumu.Utilities.Driver;
-import AutomationTest.qumu.Utilities.TestDataReader;
-import cucumber.api.Scenario;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.NoSuchSessionException;
+import io.cucumber.core.api.Scenario;
+import org.junit.After;
+import org.junit.Before;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import cucumber.api.Scenario;
+
 import java.util.concurrent.TimeUnit;
 
 public class Hooks {
